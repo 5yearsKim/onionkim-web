@@ -1,8 +1,8 @@
-import React from 'react';
-import {Container, Stack} from '@mui/material'
+import {Container, Box, Stack } from '@mui/material'
 import {Navbar} from 'components/Navbar';
-import {Introduction} from 'components/Introduction'
 import {Provider} from 'system/provider'
+import {Introduction} from 'components/Introduction'
+import {LinkTab} from 'components/LinkTab'
 
 function App() {
   return (
@@ -10,9 +10,12 @@ function App() {
       <Stack direction='column'>
         <Navbar/>
 
+        <Box height={16}/>
+
         <Container maxWidth="sm">
-          <div>hello</div>
+
           <Introduction/>
+          <LinkTab/>
         </Container>
       </Stack>
     </Provider>

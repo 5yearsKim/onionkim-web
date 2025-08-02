@@ -1,9 +1,21 @@
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
+import {teal} from '@mui/material/colors'
 
 
 export const theme = createTheme({
   colorSchemes: {
-    dark: true,
+    dark: {
+      palette: {
+        primary: {
+          main: teal['A200'],
+        }
+      }
+    },
   },
+  palette: {
+    primary: {
+      main: teal[500],
+    }
+  }
 });
 

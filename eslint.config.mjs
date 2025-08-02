@@ -5,14 +5,6 @@ import eslintReact from 'eslint-plugin-react';
 export default tsEslint.config(
   jsEslint.configs.recommended,
   ...tsEslint.configs.recommended,
-  {
-      languageOptions: {
-      globals: {
-        ...globals.browser, // window, document, etc.
-      },
-    },
-  },
-
 
   {
     files: ['**/*.{js,ts,jsx,tsx}'],
@@ -23,6 +15,7 @@ export default tsEslint.config(
         VariableDeclarator: 1,
         outerIIFEBody: 1,
       }],
+      '@typescript-eslint/no-explicit-any': 'off', 
     },
   },
 
