@@ -4,9 +4,17 @@ import eslintReact from 'eslint-plugin-react';
 
 export default tsEslint.config(
   jsEslint.configs.recommended,
-  tsEslint.configs.recommended,
+  ...tsEslint.configs.recommended,
+  {
+      languageOptions: {
+      globals: {
+        ...globals.browser, // window, document, etc.
+      },
+    },
+  },
 
-    {
+
+  {
     files: ['**/*.{js,ts,jsx,tsx}'],
     rules: {
       // 2-space indent; tweak options as you like
