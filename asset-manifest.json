@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/onionkim-web/static/js/main.3a9adeeb.js",
-    "index.html": "/onionkim-web/index.html",
-    "main.3a9adeeb.js.map": "/onionkim-web/static/js/main.3a9adeeb.js.map"
+    "main.js": "/static/js/main.3a9adeeb.js",
+    "index.html": "/index.html",
+    "main.3a9adeeb.js.map": "/static/js/main.3a9adeeb.js.map"
   },
   "entrypoints": [
     "static/js/main.3a9adeeb.js"
