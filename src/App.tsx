@@ -3,6 +3,7 @@ import {Navbar} from 'components/Navbar';
 import {Provider} from 'system/provider'
 import {Introduction} from 'components/Introduction'
 import {LinkTab} from 'components/LinkTab'
+import {LaptopRenderer} from 'components/LaptopRenderer'
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
         <Box height={16}/>
 
         <Container maxWidth="sm">
+
+          <Box height={350} mb={2} width='100%'>
+            <LaptopRenderer/>
+          </Box>
 
           <Introduction/>
           <LinkTab/>
